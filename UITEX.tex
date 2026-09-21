@@ -1,0 +1,54 @@
+% این قالب توسط علیرضا کارآمد دانشجوی دکترای رشته فیزیک دانشگاه اصفهان ویرایش شده است. در صورت بروز مشکل با ایمیل 
+% keyvankaramad.edu@gmail.com
+% یا با شماره‌ی 09935351365 تماس حاصل فرمایید. 
+\documentclass[a4paper,11pt,twoside]{book}
+%=,draft]{book}
+%\usepackage{UI-Thesis}
+\input{Sup/packages}
+%\renewcommand{\baselinestretch}{2}
+%\baselineskip=1.1cm
+%-----------------------------
+\begin{document}
+\pagestyle{plain}
+\pagenumbering{harfi}
+\setcounter{page}{2}
+\clearpage
+\thispagestyle{empty}
+\newgeometry{left=3.5cm, right=3.5cm, top=3.5cm, bottom=3.5cm}
+\begin{figure}
+\centering
+\includegraphics[width = \textwidth]{Allah.jpg}
+\end{figure}
+\include{Sup/info}
+%\MakeFarsiSignaturePage
+%\include{Sup/Acknowledgments}
+%\include{Sup/Dedication}
+%\include{Sup/AbstractFa}
+%\MakeFarsiAbstract
+\MakeTableOfContents
+\MakeListOfFigures
+\MakeListOfTables
+% ----------------------------
+\clearpage
+\pagestyle{myheadings}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+% ░░░░░░░Chapters ░░░░░░░
+\clearpage
+\baselineskip=0.7cm
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2}
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4}
+\include{Chapters/Chapter5}
+\MakeAppendices
+\include{Sup/Appendices}
+% ░░░░░░References ░░░░░░
+\MakeReferences
+\bibliographystyle{ModifiedIEEEtranFa}
+\bibliography{Sup/References}
+% ░░░░░ Abstract - English ░░░░░
+\include{Sup/AbstractEn}
+\MakeEnglishAbstract
+\include{Sup/signature}
+\end{document} 
